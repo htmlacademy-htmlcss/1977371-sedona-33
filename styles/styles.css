@@ -18,8 +18,32 @@ font-display: swap;
 
   body {
     font-family: "PT Sans", sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 36px;
     background-color: #ffffff;
     color: #000000
+  }
+
+  .page-header {
+    background: #ffffff;
+    color: #000000;
+    }
+
+  .navigation-link {
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#000000;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .main-index {
+    background-image: url("images/index-background.jpg");
+    color: #ffffff;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
