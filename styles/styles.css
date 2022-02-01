@@ -27,6 +27,7 @@ font-display: swap;
     background: #ffffff;
     color: #000000;
     }
+
     /* Ссылки в шапке */
   .navigation-link {
     font-family: "PT Sans", sans-serif;
@@ -38,7 +39,7 @@ font-display: swap;
     text-align: center;
     text-decoration: none;
   }
-   /* ыставление главной картинки на странице */
+   /* вставление главной картинки на странице */
   .main-index {
     background-image: url("images/index-background.jpg");
     color: #000000;
@@ -97,7 +98,7 @@ font-display: swap;
 
 
    /* Клавиша Главная в каталоге */
-  .breadcrumbs-item {
+  .breadcrumbs-link {
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 21px;
@@ -108,10 +109,17 @@ font-display: swap;
     text-decoration: none;
   }
 
-
-
-
-
+   /* Подронее и В избранное  */
+  .product-card-button button {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color:#ffffff;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
 
    /* Название карточки в каталоге */
   .product-card-link {
