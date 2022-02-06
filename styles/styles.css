@@ -90,7 +90,10 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
+/* ссылка в подвале */
+.page-footer a {
+  color: #000000;
+}
 
 /* Клавиша Главная в каталоге */
 .breadcrumbs-link {
@@ -103,9 +106,19 @@ body {
   text-align: center;
   text-decoration: none;
 }
+/* каталог фильтр */
+.catalog-products {
+  color: #ffffff;
+  background-color: #000000;
+}
+/* Инфраструктура и тип жилья */
+.catalog-filter-list {
+  font-size: 18px;
+  line-height: 23px;
+}
 
 /* Подронее и В избранное  */
-.product-card-button button {
+.product-list .product-card-button {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -113,6 +126,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -124,4 +138,17 @@ body {
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+  text-decoration: none;
+}
+
+.product-card-hotel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
