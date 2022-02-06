@@ -17,8 +17,8 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 36px;
   font-weight: 400;
   background-color: #ffffff;
   color: #000000;
@@ -59,11 +59,12 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
-/* Текст с преимуществами Седоны */
+
 .advantages-description {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 /* Текст с логотипами */
@@ -71,6 +72,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
   text-transform: uppercase;
 }
 /* Текст под логотипами */
@@ -79,6 +81,32 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+/* Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне */
+.search {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.information {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* заинтересовались */
+.subscribe {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+}
+
 /* Контактный телефон в подале сайта */
 .contact-phone {
   font-family: "PT Sans", sans-serif;
@@ -141,14 +169,62 @@ body {
   text-decoration: none;
 }
 
+/* гостиница */
 .product-card-hotel {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 }
 
+/* цена гостиниц */
 .product-card-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+/* рейтинг госиниц */
+.product-card-raiting {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* загрузить еще */
+.pagination-show-more {
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.information-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.subscribe-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
 }
