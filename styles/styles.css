@@ -16,6 +16,10 @@
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
@@ -23,6 +27,38 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+
+.main-container {
+  flex-grow: 1;
+}
+/* блок навигации в хедере */
+.navigation {
+  display: flex;
+  width: 1060;
+  margin: 0 auto;
+}
+/* все ссылки в хедере */
+.navigation-list {
+  width: 530px;
+  margin: 0;
+  padding: 0;
+}
+/* поиск избранное в хедере */
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+/* вся соль страницы или сам сайт */
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 /* шрифт шапки */
 .page-header {
   background: #ffffff;
@@ -32,7 +68,6 @@ body {
 
 /* Ссылки в шапке */
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
@@ -47,21 +82,35 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-/* Выравнивание текстов по центру */
+/* Выравнивание текстов приемуществ по центру */
 .advantages-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* Список бонусов */
+.bonuses-list {
+  display: flex;
+  justify-content: space-between;
 }
 
+.bonuses-item {
+  width: 400px;
+}
+/* общее на главной странице сайта из 5 преимуществ и двух фотокарточек */
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0;
+}
 /* Заголовки преимуществ */
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantages-description {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -69,7 +118,6 @@ body {
 
 /* Текст с логотипами */
 .advantages-name {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -77,15 +125,13 @@ body {
 }
 /* Текст под логотипами */
 .advantages-text2 {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
-/* Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне */
-.search {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
+
+/* Кнопки */
+.button {
+  font: inherit;
 }
 
 .information {
@@ -109,7 +155,6 @@ body {
 
 /* Контактный телефон в подале сайта */
 .contact-phone {
-  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -125,7 +170,6 @@ body {
 
 /* Клавиша Главная в каталоге */
 .breadcrumbs-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -146,8 +190,7 @@ body {
 }
 
 /* Подронее и В избранное  */
-.product-list .product-card-button {
-  font-family: "PT Sans", sans-serif;
+.product-card-button {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -160,7 +203,6 @@ body {
 
 /* Название карточки в каталоге */
 .product-card-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
@@ -228,3 +270,27 @@ body {
   color: #ffffff;
   background-color: #000000;
 }
+
+/* Добавление сеток в подвал */
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-phone {
+  width: 720px;
+  text-align: center;
+}
+
+.footer-social {
+  margin-left: auto;
+  max-width: 107px;
+}
+
+/* добавление сеток */
+html {
+  height: 100%;
+}
+}
+
