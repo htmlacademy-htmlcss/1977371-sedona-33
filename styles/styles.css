@@ -16,7 +16,8 @@
 }
 
 body {
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -31,10 +32,17 @@ body {
 .main-container {
   flex-grow: 1;
 }
+
+/* Картинка или логотип в хедере */
+.page-header-logo {
+  width: 140px;
+  margin-right: 30px;
+}
+
 /* блок навигации в хедере */
 .navigation {
   display: flex;
-  width: 1060;
+  width: 1060px;
   margin: 0 auto;
 }
 /* все ссылки в хедере */
@@ -162,6 +170,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
+  width: 720px;
 }
 /* ссылка в подвале */
 .page-footer a {
@@ -179,9 +188,10 @@ body {
   text-decoration: none;
 }
 /* каталог фильтр */
-.catalog-products {
+.catalog-filter {
   color: #ffffff;
   background-color: #000000;
+  width: 1200px;
 }
 /* Инфраструктура и тип жилья */
 .catalog-filter-list {
@@ -278,19 +288,24 @@ body {
   margin: 0 auto;
 }
 
-.contact-phone {
-  width: 720px;
-  text-align: center;
+/* связь с нами или социальные сети */
+.footer-social {
+  width: 200px;
+  margin-right: 61px;
 }
 
-.footer-social {
-  margin-left: auto;
-  max-width: 107px;
+
+/* ссылка на html академию */
+.htmlacademy-link {
+  max-width: 115px;
+  margin-left: 53px;
 }
 
 /* добавление сеток */
 html {
   height: 100%;
 }
-}
 
+.product-card {
+  width: 1056px;
+}
