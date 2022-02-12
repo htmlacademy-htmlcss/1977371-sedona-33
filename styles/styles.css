@@ -248,6 +248,9 @@ body {
   line-height: 26px;
   color: #ffffff;
   background-color: #000000;
+  width: 620px;
+  display: block;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -269,6 +272,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
+  text-transform: none;
 }
 
 .subscribe-catalog {
@@ -306,6 +310,26 @@ html {
   height: 100%;
 }
 
-.product-card {
+.product-list {
   width: 1056px;
 }
+
+.pagination {
+  width: 1056px;
+}
+
+/* Результат поиска (НАЙДЕНО 38 ГОСТИНИЦ) */
+.search-result {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 337px;
+}
+
+.subscribe {
+  width: 800px;
+  margin: 0 auto;
+}
+
