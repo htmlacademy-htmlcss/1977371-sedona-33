@@ -36,7 +36,6 @@ body {
 /* Картинка или логотип в хедере */
 .page-header-logo {
   width: 140px;
-  margin-right: 30px;
 }
 
 /* блок навигации в хедере */
@@ -47,15 +46,23 @@ body {
 }
 /* все ссылки в хедере */
 .navigation-list {
+  display: flex;
   width: 530px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 /* поиск избранное в хедере */
 .navigation-user {
   max-width: 250px;
   margin-left: auto;
 }
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
+}
+
 /* вся соль страницы или сам сайт */
 .page-container {
   width: 1200px;
@@ -69,6 +76,7 @@ body {
 
 /* шрифт шапки */
 .page-header {
+  width: 1060px;
   background: #ffffff;
   color: #000000;
   font-weight: 700;
@@ -76,6 +84,8 @@ body {
 
 /* Ссылки в шапке */
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
@@ -84,14 +94,34 @@ body {
 }
 /* вставление главной картинки на странице */
 .main-index {
-  background-image: url("../images/index-background.jpg");
   color: #000000;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
+
+.main-index::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 485px;
+  background-image:
+    url("../images/welcome.svg"),
+    url("../images/zz.svg"),
+    url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size:
+    458px 352px, /* размеры надписи */
+    1200px 57px, /* размеры зигзага */
+    cover; /* тут надо просто заполнить всю площадь фоткой */
+  background-position:
+    center, /* возможно в макет с центрированием не попадём, но пока сойдёт */
+    bottom, /* прижимаем загогулину к низу */
+    center; /* при ковровой растяжке фотки лучше всего отцентрировать */
+  background-color: #555555; /* нужен какой-то цвет фоновый на случай незагрузки фотки. */
+}
+
 /* Выравнивание текстов приемуществ по центру */
 .advantages-list {
+  list-style-type: none;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -99,26 +129,33 @@ body {
 /* Список бонусов */
 .bonuses-list {
   display: flex;
+  list-style-type: none;
   justify-content: space-between;
 }
 
 .bonuses-item {
   width: 400px;
+  height: 384px;
 }
 /* общее на главной странице сайта из 5 преимуществ и двух фотокарточек */
 .index-columns {
+  width: 1200px;
+  height: 1535px;
   display: flex;
   justify-content: space-between;
   padding: 0 0;
 }
 /* Заголовки преимуществ */
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 80px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantages-description {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -126,6 +163,8 @@ body {
 
 /* Текст с логотипами */
 .advantages-name {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -287,6 +326,7 @@ body {
 
 /* Добавление сеток в подвал */
 .page-footer-container {
+  padding: 40px 0;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -333,3 +373,63 @@ html {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item-tw {
+  width: 18px;
+  height: 15px;
+  margin-right: 29px;
+}
+
+.footer-social-item-fb {
+  width: 10px;
+  height: 18px;
+  margin-right: 30px;
+}
+
+.footer-social-item-yt {
+  width: 20px;
+  height: 16px;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 384px;
+}
+
+.sedona-city {
+  width: 1200px;
+  height: 282px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sedona-city-text {
+  width: 720px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 31px;
+}
+
+.sedona-city-text2 {
+  margin: 0 auto;
+}
