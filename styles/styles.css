@@ -343,15 +343,6 @@ html {
   width: 1056px;
 }
 
-/* Результат поиска (НАЙДЕНО 38 ГОСТИНИЦ) */
-.search-result {
-  font-size: 30px;
-  line-height: 39px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  width: 337px;
-}
 
 .subscribe {
   width: 800px;
@@ -467,8 +458,109 @@ html {
   color: #ffffff;
   background-color: #000000;
   width: 1200px;
-
   width: 100%;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
+}
+
+/* Результат поиска (НАЙДЕНО 38 ГОСТИНИЦ) */
+.search-result {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* width: 337px; */
+  height: 39px;
+  margin-top: 6px;
+  margin-right: 192px;
+  margin-bottom: 3px;
+}
+
+.sorting-conteiner {
+  display: flex;
+  color: #000000;
+  background-color: #ffffff;
+  width: 1057px;
+  height: 48px;
+  margin: 44px 72px 73px 71px;
+}
+
+.sorting-conteiner .button {
+  width: 48px;
+  height: 48px;
+}
+
+.select-control {
+  width: 287px;
+  height: 48px;
+  margin-right: 81px;
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 19px;
+}
+
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Пагинация */
+.pagination-container {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 30px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 73px;
+}
+
+.pagination {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 14px 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+}
+
+
+.select-control-pagination {
+  width: 160px;
+  height: 48px;
+  margin-right: 72px;
+  margin-left: 51px;
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+}
+
+.hotels-page {
+  margin-top: 16px;
+  margin-right: 51px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 23px;
+  width: 175px;
+  height: 23px;
 }
