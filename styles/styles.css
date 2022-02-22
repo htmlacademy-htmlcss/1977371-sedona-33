@@ -126,14 +126,11 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 384px 384px 384px;
+  grid-template-rows: 384px 384px 384px 384px;
+  width: 1200px;
+  height: 1535px;
 }
 
-.advantages-item-illustrated {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 /* Список бонусов */
 .bonuses-list {
   display: flex;
@@ -392,6 +389,35 @@ html {
 .advantages-item {
   width: 400px;
   height: 384px;
+}
+
+.advantage-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.advantage-two {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.advantage-three {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.advantage-four {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.advantage-five {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.photo-sedona-1 {
+  grid-column-end: span 2;
 }
 
 .sedona-city {
