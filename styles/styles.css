@@ -229,7 +229,7 @@ body {
   list-style-type: none;
 }
 
-/* Подронее и В избранное  */
+/* Подронее */
 .product-card-button {
   font-size: 16px;
   line-height: 21px;
@@ -239,8 +239,28 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  background-color: #756257;
 }
-
+/* В избранное */
+.product-card-button-2 {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  background-color: #83b3d3;
+}
 /* Название карточки в каталоге */
 .product-card-link {
   font-size: 24px;
@@ -253,9 +273,11 @@ body {
 
 /* гостиница */
 .product-card-hotel {
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  font-weight: 400;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 /* цена гостиниц */
@@ -263,6 +285,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
 /* рейтинг госиниц */
@@ -270,6 +294,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  grid-column: 2/4;
+  grid-row: 3/4;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 /* загрузить еще */
@@ -277,9 +308,10 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #83b3d3;
   width: 620px;
   height: 60px;
+  margin: 0 auto;
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -343,7 +375,8 @@ html {
 
 .product-list {
   width: 1056px;
-  margin: 0;
+  list-style-type: none;
+  margin: 0 72px;
   padding: 0;
 }
 
@@ -506,12 +539,6 @@ html {
   padding-left: 19px;
 }
 
-.product-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* Пагинация */
 .pagination-container {
   display: flex;
@@ -570,7 +597,8 @@ html {
 .product-card {
   width: 340px;
   height: 438px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card-title {
@@ -579,19 +607,36 @@ html {
   font-weight: 700;
   text-decoration: none;
   list-style-type: none;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .product-list-card {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  row-gap: 10px;
+  column-gap: 18px;
   margin: 0;
   padding: 0;
-  margin-bottom: 54px;
-  margin-right: 18px;
+  margin-bottom: 64px;
+}
+
+.star {
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 
 .product-list-card:nth-child(3n) {
   margin-right: 0;
+}
+
+.product-characteristic {
+  display: grid;
+  grid-template-columns: 133px 25px 143px;
+  grid-template-rows: 23px 37px 37px;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  row-gap: 16px;
 }
