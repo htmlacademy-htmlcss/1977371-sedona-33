@@ -68,6 +68,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  display: grid;
 }
 
 .logo {
@@ -125,39 +126,29 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 384px 384px 384px 384px;
-  width: 1200px;
-  height: 1535px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 }
 
-/* Список бонусов */
-.bonuses-list {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
+.advantages-item:nth-child(2n+2) .photo-sedona {
+  order: -1;
 }
 
-.bonuses-item {
-  width: 400px;
-  height: 384px;
+.advantages-item-illustrated {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-/* общее на главной странице сайта из 5 преимуществ и двух фотокарточек */
-.index-columns {
-  width: 1200px;
-  height: 1535px;
-  display: block;
-  justify-content: space-between;
-  padding: 0 0;
-}
+
 
 /* Заголовки преимуществ */
 .advantages-title {
-  margin-top: 0;
-  margin-bottom: 80px;
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-top: 97px;
+  padding-bottom: 81px;
 }
 
 .advantages-description {
@@ -169,17 +160,42 @@ body {
 
 /* Текст с логотипами */
 .advantages-name {
-  margin-top: 0;
-  margin-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 184px;
+  padding-bottom: 20px;
+  margin: 0;
 }
-/* Текст под логотипами */
-.advantages-text2 {
-  font-size: 18px;
-  line-height: 21px;
+
+.bonuses-item {
+  background-color: #83b3d3;
+}
+
+.bonuses-item-meal {
+  background-color: #ffffff;
+}
+
+/* Список бонусов */
+.bonuses-list {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 384px;
+}
+
+
+/* общее на главной странице сайта из 5 преимуществ и двух фотокарточек */
+.index-columns {
+  width: 1200px;
+  height: 1535px;
+  display: block;
+  justify-content: space-between;
+  padding: 0 0;
 }
 
 /* Кнопки */
@@ -188,11 +204,12 @@ body {
 }
 
 .information {
+  width: 720px;
+  margin: 29px auto 46px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
 }
 
 /* заинтересовались */
@@ -204,6 +221,14 @@ body {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+
+.subscribe-index {
+  margin-top: 91px;
+  width: 720px;
 }
 
 /* Контактный телефон в подале сайта */
@@ -351,6 +376,10 @@ body {
   margin-top: 141px;
 }
 
+.page-footer-index {
+  margin: 0;
+}
+
 /* Добавление сеток в подвал */
 .page-footer-container {
   display: flex;
@@ -384,11 +413,6 @@ html {
   padding: 0;
 }
 
-
-.subscribe {
-  width: 800px;
-  margin: 0 auto;
-}
 
 .visually-hidden {
   position: absolute;
@@ -426,9 +450,8 @@ html {
   height: 16px;
 }
 
-.advantages-item {
-  width: 400px;
-  height: 384px;
+.photo-sedona {
+  grid-column-end: span 2;
 }
 
 .sedona-city {
@@ -465,9 +488,11 @@ html {
   content: "";
   display: block;
   width: 100%;
-  background-image: url("../images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
 }
+
+
 /* Хлебные крошки */
 .breadcrumbs {
   display: flex;
@@ -500,7 +525,7 @@ html {
   width: 1200px;
   width: 100%;
   height: 408px;
-  background-image: url("../images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -661,6 +686,7 @@ html {
   width: 800px;
   display: flex;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .newsletter-email {
@@ -679,3 +705,41 @@ html {
   height: 60px;
 }
 
+.information-index {
+  width: 1200px;
+  height: 417px;
+}
+
+.search-sedona {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  width: 575px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.search {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 14px 1em 10px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #756257;
+}
+
+.subscribe-newsletter {
+  width: 1200px;
+  height: 411px;
+}
+
+
+.main-inners::before {
+  content: "";
+  display: block;
+  width: 100%;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+}

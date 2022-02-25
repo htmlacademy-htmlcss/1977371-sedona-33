@@ -62,38 +62,38 @@
         <div class="index-columns">
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-illustrated">
-              <div class="advantage-one">
+              <div class="advantages-text">
                 <h3 class="advantages-title">Настоящий<br> городок</h3>
                 <p class="advantages-description">Седона — не аттракцион<br> для туристов, там течёт<br> своя жизнь</p>
               </div>
-              <img class="photo-sedona-1" src="images/lodging.jpg" width="800" height="384" alt="Фотография седоны 1">
+              <img class="photo-sedona" src="images/lodging.jpg" width="800" height="384" alt="Фотография седоны 1">
               <ul class="bonuses-list">
                 <li class="bonuses-item">
                   <h4 class="advantages-name">Жильё</h4>
-                  <p class="advantages-text2">
+                  <p class="advantages-description">
                     Рекомендуем пожить <br> в настоящем мотеле, <br> все как в кино!
                   </p>
                 </li>
-                <li class="bonuses-item">
+                <li class="bonuses-item-meal">
                   <h4 class="advantages-name">Еда</h4>
-                  <p class="advantages-text2">
+                  <p class="advantages-description">
                     Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!
-                    <img src="images/devils-bridge.jpg" width="800" height="384" alt="Фотография седоны 2">
                   </p>
                 </li>
                 <li class="bonuses-item">
                   <h4 class="advantages-name">Сувениры</h4>
-                  <p class="advantages-text2">
+                  <p class="advantages-description">
                     Не только китайского, <br> но и настоящего местного, <br> производства!
                   </p>
                 </li>
               </ul>
             </li>
             <li class="advantages-item advantages-item-illustrated">
-              <div class="advantage-two">
+              <div class="advantages-text">
                 <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
               </div>
+              <img class="photo-sedona" src="images/devils-bridge.jpg" width="800" height="384" alt="Фотография седоны 2">
             </li>
             <li class="advantages-item">
               <div class="advantage-three">
@@ -116,19 +116,21 @@
           </ul>
         </div>
       </section>
-      <section>
-        <h2 class="subscribe">Заинтересовались?</h2>
+      <section class="information-index">
+        <h2 class="subscribe subscribe-index">Заинтересовались?</h2>
         <p class="information">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="button" href="#">Поиск гостиницы в Седоне</a>
+        <div class="search-sedona">
+          <a class="search button" href="#">Поиск гостиницы в Седоне</a>
+        </div>
       </section>
-      <section>
+      <section class="subscribe-newsletter main-inners">
         <h2 class="subscribe">Подпишитесь на рассылку</h2>
         <p class="information">Только полезная информация и никакого спама, <br>
           честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Электропочта</label>
+          <label for="newsletter-email" class="visually-hidden">Электропочта</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button newsletter-button" type="submit">
@@ -139,10 +141,10 @@
     </div>
   </main>
   <!-- подвал -->
-  <footer class="page-footer">
+  <footer class="page-footer page-footer-index">
     <div class="page-footer-container">
       <section class="footer-social">
-        <h2 class="page-footer-title">Связаться с нами</h2>
+        <h2 class="page-footer-title visually-hidden">Связаться с нами</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item-tw">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
