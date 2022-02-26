@@ -44,6 +44,7 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  height: 70px;
 }
 /* все ссылки в хедере */
 .navigation-list {
@@ -78,7 +79,7 @@ body {
 
 /* шрифт шапки */
 .page-header {
-  width: 1060px;
+  width: 1200px;
   background: #ffffff;
   color: #000000;
   font-weight: 700;
@@ -88,12 +89,31 @@ body {
 /* Ссылки в шапке */
 .navigation-link {
   display: block;
-  padding: 20px 17px;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
+  padding: 20px 17px;
+}
+
+.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756257;
+  width: 160px;
+  height: 37px;
+}
+
+.like {
+  padding: 0;
 }
 /* вставление главной картинки на странице */
 
@@ -201,6 +221,9 @@ body {
 /* Кнопки */
 .button {
   font: inherit;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
 }
 
 .information {
@@ -260,7 +283,6 @@ body {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #000000;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
