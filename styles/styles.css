@@ -215,13 +215,17 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 184px;
+  padding-top: 23px;
   padding-bottom: 20px;
   margin: 0;
 }
 
 .bonuses-item {
-  background-color: #83b3d3;
+  background-color: green;
+}
+
+.bonuses-logo {
+  padding-top: 90px;
 }
 
 .bonuses-item-meal {
@@ -259,7 +263,9 @@ body {
 
 .information {
   width: 720px;
-  margin: 29px auto 46px;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -286,7 +292,7 @@ body {
   background-color: #ffffff;
   width: 800px;
   margin: 0 auto;
-  padding-top: 94px;
+  padding-top: 91px;
 }
 
 .subscription {
@@ -302,7 +308,6 @@ body {
 }
 
 .subscribe-index {
-  margin-top: 91px;
   width: 720px;
 }
 
