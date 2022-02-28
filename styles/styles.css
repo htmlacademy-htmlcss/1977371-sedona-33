@@ -77,6 +77,10 @@ body {
   fill: #dbdbdb;
 }
 
+.navigation-link:hover .navigation-icon {
+  full: #756257;
+}
+
 .count-badge {
   position: absolute;
   font-weight: 400;
@@ -125,14 +129,10 @@ body {
   position: relative;
 }
 
+
 .navigation-link-button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
   width: 160px;
   height: 37px;
-  background-color: #756257;
-  color: #ffffff;
   text-align: center;
   margin-top: 13px;
   margin-left: 20px;
@@ -140,11 +140,25 @@ body {
 }
 
 .want {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   color: #ffffff;
+  background-color: #756257;
   text-decoration: none;
   padding-top: 9px;
   text-transform: uppercase;
 }
+
+.want:hover {
+  background-color: #615048;
+}
+
+.want:focus {
+  background-color: #615048;
+  border: 3px solid #83b3d3;
+}
+
 
 /* вставление главной картинки на странице */
 
@@ -346,6 +360,7 @@ body {
   padding-top: 9px;
   padding-bottom: 10px;
   background-color: #756257;
+  border-radius: 4px;
 }
 /* В избранное */
 .product-card-button-2 {
@@ -361,6 +376,7 @@ body {
   grid-row: 2/3;
   padding-top: 9px;
   padding-bottom: 10px;
+  border-radius: 4px;
 }
 
 /* Название карточки в каталоге */
@@ -403,6 +419,7 @@ body {
   text-align: center;
   padding-top: 9px;
   padding-bottom: 10px;
+  border-radius: 4px;
 }
 
 /* загрузить еще */
@@ -822,6 +839,13 @@ html {
 .star {
   grid-column: 1/2;
   grid-row: 3/4;
+  background-image: url("../images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .product-list-card:nth-child(3n) {
@@ -866,11 +890,23 @@ html {
 
 .newsletter-button {
   background-color: #83b3d3;
+  color: #ffffff;
   text-align: center;
   padding: 0;
   border: 0;
   width: 200px;
   height: 60px;
+  border-radius: 0 10px 10px 0;
+}
+
+.newsletter-form:hover {
+  background-color: #68a2ca;
+  border-radius: 0 10px 10px 0;
+}
+
+.newsletter-form:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
   border-radius: 0 10px 10px 0;
 }
 
@@ -898,6 +934,15 @@ html {
   font-weight: 700;
   background-color: #756257;
   border-radius: 10px;
+}
+
+.search:hover {
+  background-color: #615048;
+}
+
+.search:focus {
+  background-color: #615048;
+  border: 3px solid #83b3d3;
 }
 
 .subscribe-newsletter {
@@ -936,4 +981,5 @@ html {
 
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
+}
 }
