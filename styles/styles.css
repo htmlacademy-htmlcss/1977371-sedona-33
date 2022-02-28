@@ -292,7 +292,6 @@ body {
   background-color: #ffffff;
   width: 800px;
   margin: 0 auto;
-  padding-top: 91px;
 }
 
 .subscription {
@@ -309,6 +308,7 @@ body {
 
 .subscribe-index {
   width: 720px;
+  padding-top: 91px;
 }
 
 /* Контактный телефон в подале сайта */
@@ -413,7 +413,7 @@ body {
   width: 620px;
   height: 60px;
   margin: 30px auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .loading {
@@ -434,8 +434,7 @@ body {
   color: #000000;
   text-transform: none;
   margin: 0;
-  padding: 0;
-  margin-bottom: 46px;
+  padding-bottom: 46px;
 }
 
 .subscribe-catalog {
@@ -445,8 +444,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
-  padding: 0;
-  margin-bottom: 46px;
+  padding-bottom: 46px;
 }
 
 .page-footer {
@@ -575,12 +573,13 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  /* color: #242424; */
   list-style-type: none;
+  height: 21px;
+  margin-bottom: 45px;
 }
 /* Хлебные крошки */
 .breadcrumbs-item:nth-child(1) {
-  margin-right: 26px;
+  margin-right: 10px;
   margin-left: 73px;
   color: inherit;
 }
@@ -591,19 +590,89 @@ html {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-  /* background-color: #000000; */
   text-align: center;
   text-decoration: none;
 }
+
+.breadcrumbs-home {
+  padding-right: 10px;
+}
+
 /* каталог фильтр */
 .catalog-filter {
   color: #ffffff;
   background-color: #000000;
-  width: 1200px;
   width: 100%;
   height: 408px;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
+}
+
+.catalog-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-left: 71px;
+  margin-right: 69px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  min-width: 96px;
+  height: 26px;
+  font-size: 20px;
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+
+.conrol-input {
+  width: 20px;
+  height: 20px;
+}
+
+.catalog-filter-button {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-button {
+  width: 160px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #83b3d3;
+  color: #ffffff;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.catalog-button-reset {
+  width: 160px;
+  height: 23px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
 }
 
 /* Результат поиска (НАЙДЕНО 38 ГОСТИНИЦ) */
@@ -612,11 +681,10 @@ html {
   line-height: 39px;
   font-weight: 700;
   text-transform: uppercase;
-  /* width: 337px; */
   height: 39px;
-  margin-top: 6px;
-  margin-right: 192px;
-  margin-bottom: 3px;
+  padding-right: 190px;
+  padding-top: 6px;
+  padding-bottom: 3px;
 }
 
 .sorting-conteiner {
@@ -625,12 +693,31 @@ html {
   background-color: #ffffff;
   width: 1057px;
   height: 48px;
-  margin: 44px 72px 73px 71px;
+  margin: 44px 72px 53px 72px;
 }
 
-.sorting-conteiner .button {
+.card-grid-toggle {
   width: 48px;
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.card-grid-toggle-current {
+  border: 2px solid #000000;
+}
+
+.card-grid-toggle:not(:last-child) {
+  margin-right: 8px;
+}
+
+.icon-catalog-sorting {
+  width: 16px;
+  height: 14px;
 }
 
 .select-control {
@@ -642,6 +729,9 @@ html {
   padding-top: 12px;
   padding-bottom: 13px;
   padding-left: 19px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 /* Пагинация */
