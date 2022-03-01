@@ -67,6 +67,16 @@ body {
   padding: 0;
 }
 
+.navigation-link-current::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 18px;
+  right: 18px;
+  background-color: #756257;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -168,9 +178,6 @@ body {
   border: 3px solid #83b3d3;
 }
 
-
-/* вставление главной картинки на странице */
-
 /*вставление главной картинки на странице*/
 .main-index::before {
   content: "";
@@ -204,6 +211,11 @@ body {
   width: 100%;
 }
 
+.advantages-text {
+  background-color: #83b3d3;
+  color: #ffffff;
+}
+
 .advantages-item:nth-child(2n+2) .photo-sedona {
   order: -1;
 }
@@ -214,7 +226,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-
 /* Заголовки преимуществ */
 .advantages-title {
   margin: 0;
@@ -224,6 +235,19 @@ body {
   padding-top: 97px;
   padding-bottom: 81px;
 }
+
+.advantages-three {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-four {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-five {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 
 .advantages-description {
   margin: 0;
@@ -244,7 +268,7 @@ body {
 }
 
 .bonuses-item {
-  background-color: green;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .bonuses-logo {
@@ -386,6 +410,16 @@ body {
   background-color: #756257;
   border-radius: 4px;
 }
+
+.product-card-button:hover {
+  background-color: #615048;
+}
+
+.product-card-button:focus {
+  background-color: #615048;
+  border: 3px solid #83b3d3;
+}
+
 /* В избранное */
 .product-card-button-2 {
   font-size: 16px;
@@ -402,6 +436,41 @@ body {
   padding-bottom: 10px;
   border-radius: 4px;
 }
+
+.product-card-button-2:hover {
+  background-color: #68a2ca;
+}
+
+.product-card-button-2:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
+}
+
+.product-card-button-2-active {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #7db54f;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+
+.product-card-button-2-active:hover {
+  background-color: #6c9e42;
+}
+
+.product-card-button-2-active:focus {
+  background-color: #6c9e42;
+  border: 3px solid #756257;
+}
+
 
 /* Название карточки в каталоге */
 .product-card-link {
@@ -455,6 +524,17 @@ body {
   height: 60px;
   margin: 30px auto;
   margin-bottom: 30px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.pagination-show-more:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-show-more:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
 }
 
 .loading {
@@ -465,7 +545,6 @@ body {
   line-height: 26px;
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
 }
 
 .information-catalog {
@@ -615,14 +694,21 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  height: 21px;
   margin-bottom: 45px;
 }
 /* Хлебные крошки */
 .breadcrumbs-item:nth-child(1) {
-  margin-right: 10px;
+  margin-right: 26px;
   margin-left: 73px;
-  color: inherit;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  width: 6px;
+  height: 8px;
+  background-image: url(../images/Vector-right.svg);
 }
 
 /* Клавиша Главная в каталоге */
@@ -633,10 +719,15 @@ html {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-home {
-  padding-right: 10px;
+  height: 21px;
+  width: 12px;
+  background-image: url("../images/home-catalog.svg");
 }
 
 /* каталог фильтр */
@@ -706,6 +797,15 @@ html {
   padding: 0;
 }
 
+.catalog-button:hover {
+  background-color: #68a2ca;
+}
+
+.catalog-button:focus {
+  background-color: #68a2ca;
+  border: 3px solid #ffffff;
+}
+
 .catalog-button-reset {
   width: 160px;
   height: 23px;
@@ -714,6 +814,19 @@ html {
   text-align: center;
   text-transform: uppercase;
   padding: 0;
+  background: transparent;
+}
+
+.catalog-button-reset:hover {
+  opacity: 0.6;
+}
+
+.catalog-button-reset:focus {
+  width: 100px;
+  height: 32px;
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 /* Результат поиска (НАЙДЕНО 38 ГОСТИНИЦ) */
@@ -748,6 +861,14 @@ html {
   border-radius: 4px;
 }
 
+.card-grid-toggle:hover {
+  border: 2px solid #83b3d3;
+}
+
+.card-grid-toggle:focus {
+  border: 2px solid #83b3d3;
+}
+
 .card-grid-toggle-current {
   border: 2px solid #000000;
 }
@@ -770,9 +891,18 @@ html {
   padding-top: 12px;
   padding-bottom: 13px;
   padding-left: 19px;
+  padding-right: 21px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.select-control:hover {
+  border: 2px solid #83b3d3;
+}
+
+.select-control:focus {
+  border: 2px solid #83b3d3;
 }
 
 /* Пагинация */
@@ -809,6 +939,21 @@ html {
   color: #ffffff;
   background-color: #83b3d3;
   text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination-link-activ {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
 }
 
 .select-control-pagination {
