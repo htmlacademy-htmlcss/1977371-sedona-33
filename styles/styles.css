@@ -129,25 +129,34 @@ body {
   position: relative;
 }
 
-
-.navigation-link-button {
-  width: 160px;
-  height: 37px;
-  text-align: center;
-  margin-top: 13px;
-  margin-left: 20px;
-  border-radius: 4px;
+.navigation-link:hover {
+  color: #756257;
 }
 
-.want {
+.navigation-link:focus {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.navigation-link-button {
+  text-transform: uppercase;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.want {
+  display: block;
+  width: 130px;
+  height: 20px;
+  border-radius: 4px;
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
-  padding-top: 9px;
-  text-transform: uppercase;
+  padding: 9px 15px 8px;
 }
 
 .want:hover {
@@ -334,11 +343,26 @@ body {
   width: 720px;
   padding-top: 40px;
 }
-/* ссылка в подвале */
-.page-footer a {
+
+.footer-contact-phone {
   color: #000000;
   text-decoration: none;
 }
+
+.footer-contact-phone:hover {
+  color: #756257;
+}
+
+.footer-contact-phone:focus {
+  width: 331px;
+  height: 40px;
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #756257;
+  padding: 15px;
+}
+
 /* Инфраструктура и тип жилья */
 .catalog-filter-list {
   font-size: 18px;
@@ -874,6 +898,15 @@ html {
   border-radius: 10px 0 0 10px;
 }
 
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
 .newsletter-form {
   width: 800px;
   display: flex;
@@ -897,17 +930,18 @@ html {
   width: 200px;
   height: 60px;
   border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
 }
 
-.newsletter-form:hover {
+.newsletter-button:hover {
   background-color: #68a2ca;
-  border-radius: 0 10px 10px 0;
 }
 
-.newsletter-form:focus {
+.newsletter-button:focus {
   background-color: #68a2ca;
   border: 3px solid #756257;
-  border-radius: 0 10px 10px 0;
 }
 
 .information-index {
@@ -962,6 +996,9 @@ html {
 
 .footer-social-tw {
   background-image: url("../images/footer/Twitter.svg");
+}
+
+.footer-social-tw:hover {
 }
 
 .footer-social-fb {
