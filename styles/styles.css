@@ -211,6 +211,8 @@ body {
   width: 100%;
 }
 
+
+
 .advantages-text {
   background-color: #83b3d3;
   color: #ffffff;
@@ -620,6 +622,16 @@ html {
   list-style-type: none;
   margin: 0 72px;
   padding: 0;
+  position: relative;
+}
+
+.product-list::after {
+  content: "";
+  position: absolute;
+  top: 920px;
+  bottom: 120px;
+  width: 1055px;
+  border: 1px solid #e6e6e6;
 }
 
 
@@ -705,7 +717,9 @@ html {
 .breadcrumbs-item::after {
   position: absolute;
   content: "";
-  top: 2px;
+  display: block;
+  background-repeat: no-repeat;
+  top: 150px;
   width: 6px;
   height: 8px;
   background-image: url(../images/Vector-right.svg);
@@ -713,6 +727,8 @@ html {
 
 /* Клавиша Главная в каталоге */
 .breadcrumbs-link {
+  content: "";
+  position: absolute;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1009,12 +1025,25 @@ html {
   grid-column: 1/2;
   grid-row: 3/4;
   background-image: url("../images/Vector.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 25px 17px;
+  background-position: left;
   width: 18px;
   height: 17px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.star-2 {
+  width: 44px;
+}
+
+.star-3 {
+  width: 70px;
+}
+
+.star-4 {
+  width: 92px;
 }
 
 .product-list-card:nth-child(3n) {
