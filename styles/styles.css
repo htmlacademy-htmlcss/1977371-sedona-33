@@ -559,6 +559,17 @@ body {
   text-decoration: none;
 }
 
+.loading:hover {
+  background-color: #68a2ca;
+  border-radius: 4px;
+}
+
+.loading:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+  border-radius: 4px;
+}
+
 .information-catalog {
   font-size: 22px;
   line-height: 26px;
@@ -711,30 +722,24 @@ html {
 /* Хлебные крошки */
 .breadcrumbs {
   display: flex;
-  margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 45px;
+  margin: 0 75px 45px;
 }
 
 .breadcrumbs-item {
   display: flex;
 }
 
-/* Хлебные крошки */
-.breadcrumbs-item:nth-child(1) {
-  margin-right: 26px;
-  margin-left: 73px;
-}
-
 .breadcrumbs-item:not(:last-child)::after {
-  position: absolute;
   content: "";
-  display: block;
   background-repeat: no-repeat;
   width: 6px;
   height: 8px;
   background-image: url(../images/Vector-right.svg);
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 8px;
 }
 
 .breadcrumbs-home {
@@ -808,6 +813,8 @@ html {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  margin-top: 56px;
+  margin-left: 81px;
 }
 
 .catalog-button {
@@ -961,9 +968,10 @@ html {
   border-radius: 4px;
 }
 
-.pagination-link-activ {
-  background-color: #f2f2f2;
-  color: #000000;
+
+.pagination-link-activ:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
 }
 
 .pagination-link:hover {
@@ -1021,6 +1029,14 @@ html {
   margin: 0;
   padding: 0;
   margin-bottom: 34px;
+}
+
+.product-card-image:hover {
+  opacity: 0.6;
+}
+
+.product-card-image:focus {
+  outline: 3px solid #83b3d3;
 }
 
 .star {
@@ -1192,4 +1208,90 @@ html {
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
 }
+
+
+/* Цена ползунок */
+
+.catalog-filter-group-range {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: #333333;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-label {
+  border: 2px solid #ffffff;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+}
+
+.range-input {
+
+  width: 122px;
+  color: #ffffff;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background-color: transparent;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
