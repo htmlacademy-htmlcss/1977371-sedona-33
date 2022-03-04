@@ -786,8 +786,14 @@ html {
   margin: 0;
   border: 0;
   padding: 0;
+}
+
+.catalog-filter-group {
   margin-left: 71px;
-  margin-right: 69px;
+}
+
+.catalog-filter-group + .catalog-filter-group {
+  margin-left: 67px;
 }
 
 .catalog-filter-list {
@@ -1215,6 +1221,7 @@ html {
 .catalog-filter-group-range {
   padding: 0;
   margin: 0;
+  margin-left: 167px;
   border: 0;
 }
 
@@ -1222,7 +1229,7 @@ html {
   position: relative;
   height: 4px;
   margin-top: 32px;
-  background-color: #333333;
+  background-color: #000000;
 }
 
 .range-bar {
@@ -1263,26 +1270,33 @@ html {
 
 .range-wrapper-inputs {
   display: flex;
-
-  box-sizing: border-box;
-  border-radius: 4px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 }
 
-.catalog-filter-label {
+.catalog-filter-label-left {
   border: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-right {
+  border: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
+  margin-right: -2px;
+}
+
+.catalog-filter-label:focus-visible {
+  box-shadow: 0 0 0 3px #81b3d2;
+}
+
+
+.range-input {
   padding-top: 14px;
   padding-bottom: 11px;
   padding-left: 19px;
-}
-
-.range-input {
-
   width: 122px;
   color: #ffffff;
-  padding: 0;
   border: 0;
   font: inherit;
   background-color: transparent;
@@ -1295,3 +1309,45 @@ html {
   margin: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 33px;
+  margin-bottom: 16px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.control-input:focus-visible + .control-mark {
+  outline: 3px solid #83b3d3;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #242424;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+}
