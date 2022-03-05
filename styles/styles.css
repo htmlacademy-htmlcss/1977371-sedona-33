@@ -925,8 +925,11 @@ html {
   padding-left: 19px;
   padding-right: 21px;
   border: 2px solid #e6e6e6;
-  box-sizing: border-box;
+  background-image: url(../images/down.svg);
+  background-repeat: no-repeat;
+  background-position: right 21px center;
   border-radius: 4px;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -1341,13 +1344,84 @@ html {
   border-color: #242424;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.modal-auth {
+  width: 715px;
+}
+
+.modal-close-button {
   position: absolute;
-  top: 7px;
-  left: 2px;
-  width: 12px;
-  height: 2px;
-  background-color: #242424;
-  content: "";
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 53px;
+  height: 53px;
+  margin-top: 54px;
+  margin-right: 70px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  width: 499px;
+  height: 67px;
+  margin-left: 68px;
+  margin-right: 168px;
+  margin-top: 62px;
+  margin-bottom: 32px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.auth-form {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: 70px;
+}
+
+.arrival-date {
+  width: 155px;
+  height: 50px;
+  margin: 0;
+  margin-left: 0;
+}
+
+.auth-form-field {
+  width: 420px;
+  height: 50px;
+  background-color: #f2f2f2;
+  color: #000000;
+  padding-left: 10px;
+  background-image: url(../images/date.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: right 19px center;
+  border-radius: 4px;
+  appearance: none;
 }

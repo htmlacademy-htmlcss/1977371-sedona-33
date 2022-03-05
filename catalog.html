@@ -89,14 +89,16 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden conrol-input" type="checkbox" name="infrastructure" value="swimming-pool" checked>
+                    <input class="visually-hidden conrol-input" type="checkbox" name="infrastructure"
+                      value="swimming-pool" checked>
                     <span class="control-mark"></span>
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden conrol-input" type="checkbox" name="infrastructure" value="parking" checked>
+                    <input class="visually-hidden conrol-input" type="checkbox" name="infrastructure" value="parking"
+                      checked>
                     <span class="control-mark"></span>
                     Парковка
                   </label>
@@ -354,6 +356,29 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <p class="arrival-date">Дата заезда:</p>
+            <input class="auth-form-field" type="text" name="date">
+          </div>
+          <div class="field-group">
+            <p class="departure-date">Дата выезда:</p>
+            <input class="auth-form-field" type="text" name="date">
+          </p>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
