@@ -1413,18 +1413,29 @@ html {
   font-weight: 700;
 }
 
+.auth-form-field::placeholder {
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+
 .modal-container-close {
   display: none;
 }
 
 
 .button-date {
-  width: 15px;
-  height: 15px;
-  background-image: url("../images/date.svg");
-  cursor: pointer;
+
 }
 
+
+.button-date::before {
+  content: "";
+  display: block;
+  background-image: url("../images/date.svg");
+  width: 15px;
+  height: 15px;
+}
 
 .you {
   font-weight: 400;
