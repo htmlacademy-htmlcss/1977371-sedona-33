@@ -1351,18 +1351,19 @@ html {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
   position: relative;
   margin: auto;
-  padding: 0;
+  padding: 62px 70px 70px;
   background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .modal-auth {
-  width: 715px;
+  width: 575px;
 }
 
 .modal-close-button {
@@ -1386,9 +1387,7 @@ html {
 .modal-title {
   width: 499px;
   height: 67px;
-  margin-left: 68px;
-  margin-right: 168px;
-  margin-top: 62px;
+  margin: 0;
   margin-bottom: 32px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 30px;
@@ -1398,30 +1397,57 @@ html {
   text-transform: uppercase;
 }
 
+
 .auth-form {
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
-  margin-left: 70px;
 }
 
 .arrival-date {
-  width: 155px;
-  height: 50px;
   margin: 0;
-  margin-left: 0;
 }
 
 .auth-form-field {
   width: 420px;
-  height: 50px;
+  height: 48px;
   background-color: #f2f2f2;
   color: #000000;
   padding-left: 10px;
-  background-image: url(../images/date.svg);
   background-repeat: no-repeat;
-  cursor: pointer;
   background-position: right 19px center;
   border-radius: 4px;
   appearance: none;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+
+.button-date {
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/date.svg);
+  cursor: pointer;
+}
+
+
+.you {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #ff5757;
+  margin-left: 185px;
+}
+
+.we {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+  margin-left: 185px;
 }
