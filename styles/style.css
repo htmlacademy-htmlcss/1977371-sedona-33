@@ -1391,6 +1391,7 @@ html {
 
 .modal-stok {
   display: grid;
+  position: relative;
   grid-template-columns: 155px 367px 53px;
   grid-template-rows: 50px 29px;
   margin-bottom: 11px;
@@ -1415,7 +1416,7 @@ html {
 }
 
 
-.data-text-input {
+.text-input {
   grid-column: 2/4;
   color: #000000;
   font-weight: 700;
@@ -1428,7 +1429,7 @@ html {
   background-color: #f2f2f2;
 }
 
-.data-text-input::placeholder {
+.text-input::placeholder {
   font: inherit;
   color: inherit;
   opacity: 1;
@@ -1458,6 +1459,7 @@ html {
 }
 
 .modal-stok-two {
+  position: relative;
   display: flex;
   margin-bottom: 40px;
 }
@@ -1533,4 +1535,27 @@ html {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.arrival-data-button {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  top: 18px;
+  right: 19px;
+}
+
+.departure-data-button {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  top: 18px;
+  right: 19px;
+}
+
 
