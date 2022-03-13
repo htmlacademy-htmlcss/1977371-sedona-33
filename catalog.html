@@ -356,32 +356,45 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal-container">
+  modal-container-close
+  <div class="modal-container ">
     <div class="modal modal-auth">
       <button class="modal-close-button" type="submit">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-
-        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="field-group">
-            <label class="arrival-date">Дата заезда:</label>
-
-            <input class="auth-form-field" type="text" placeholder="21 сентября 2021">
-            <button type="button button-date">
-              <span class="visually-hidden">Календарь</span>
-            </button>
-            <b class="you">Мы не можем отправить вас в прошлое.</b>
+        <div class="modal-stok">
+          <p class="arrival-data">Дата заезда:</p>
+          <input class="data-text-input" type="text" placeholder="27 апреля 2020">
+          <div class="data-icon">
+            <svg class="data-icon" role="button" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5z" fill="#000" />
+              <path
+                d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1zm0 12H1V7h13v7zM1 6V3h2v2h1V3h7v2h1V3h2v3H1z"
+                fill="#000" />
+              <path
+                d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5zM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5zM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5zM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"
+                fill="#000" />
+            </svg>
           </div>
-          <div class="field-group">
-            <label class="departure-date">Дата выезда:</label>
-            <input class="auth-form-field" type="text" placeholder="1 сентября 2021">
-            <input type="button" class="button-date" type="date">
-            <b class="we">На эти даты есть свободные номера. Пока есть..</b>
-          </div>
-        </form>
+          <p class="data-text">Мы не можем отправить вас в прошлое.</p>
+        </div>
+        <div class="modal-stok">
+          <p class="departure-data">Дата выезда:</p>
+          <input class="data-text-input" type="text" placeholder="1 сентября 2021">
+          <p class="data-text-two">На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+        <div class="modal-stok-two">
+          <p class="adult-arrival">Взрослые:</p>
+          <input class="adult" type="text" placeholder="2">
+          <p class="children-arrival">Дети:</p>
+          <input class="adult" type="text" placeholder="1">
+        </div>
+        <div class="to-find">
+          <a class="find button" href="#">Найти</a>
+        </div>
       </section>
     </div>
   </div>
