@@ -1536,17 +1536,7 @@ html {
   padding-bottom: 15px;
 }
 
-.arrival-data-button {
-  position: absolute;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  width: 15px;
-  height: 15px;
-  top: 18px;
-  right: 19px;
-}
-
+.arrival-data-button,
 .departure-data-button {
   position: absolute;
   padding: 0;
@@ -1557,5 +1547,4 @@ html {
   top: 18px;
   right: 19px;
 }
-
 
