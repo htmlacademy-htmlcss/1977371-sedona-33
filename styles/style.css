@@ -1376,6 +1376,15 @@ html {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
 .modal-title {
   width: 499px;
   height: 67px;
@@ -1436,6 +1445,15 @@ html {
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
+}
+
+.text-input:hover {
+  background-color: #e6e6e6;
+}
+
+.text-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .data-text {
@@ -1536,6 +1554,18 @@ html {
   padding-bottom: 15px;
 }
 
+.find:hover {
+  background-color: #68a2ca;
+  border-radius: 10px;
+}
+
+.find:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+  border-radius: 10px;
+}
+
+
 .arrival-data-button,
 .departure-data-button {
   position: absolute;
@@ -1548,3 +1578,46 @@ html {
   right: 19px;
 }
 
+.minus-1 {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 13px;
+  top: 8px;
+  left: 170px;
+  opacity: 0.3;
+}
+
+.minus-2 {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 13px;
+  top: 8px;
+  right: 120px;
+  opacity: 0.3;
+}
+
+.plus-1 {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 13px;
+  height: 13px;
+  left: 255px;
+  top: 13px;
+  opacity: 0.3;
+}
+
+.plus-2 {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 13px;
+  height: 13px;
+  right: 70px;
+  top: 13px;
+  opacity: 0.3;
+}
