@@ -1402,7 +1402,6 @@ html {
   display: grid;
   position: relative;
   grid-template-columns: 155px 367px 53px;
-  grid-template-rows: 50px 29px;
   margin-bottom: 11px;
 }
 
@@ -1413,6 +1412,7 @@ html {
   margin: 0;
   padding: 0;
   color: #000000;
+  padding: 5px 0;
 }
 
 .departure-data {
@@ -1433,9 +1433,9 @@ html {
   line-height: 40px;
   border: 0;
   border-radius: 4px;
-  padding: 0;
   padding-left: 10px;
   background-color: #f2f2f2;
+  padding: 5px 0 5px 19px;
 }
 
 .text-input::placeholder {
@@ -1464,6 +1464,7 @@ html {
   margin: 0;
   padding: 0;
   color: #ff5757;
+  align-self: center;
 }
 
 .data-text-two {
@@ -1474,6 +1475,7 @@ html {
   margin: 0;
   padding: 0;
   color: #000000;
+  align-self: center;
 }
 
 .modal-stok-two {
@@ -1502,10 +1504,16 @@ html {
   font-size: 18px;
   line-height: 40px;
   text-align: center;
-  margin-right: 54px;
+  margin-right: 56px;
 }
 
-.adult:last-child {
+.adult::placeholder {
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+
+.children {
   width: 133px;
   background-color: #f2f2f2;
   border: 0;
@@ -1516,10 +1524,9 @@ html {
   font-size: 18px;
   line-height: 40px;
   text-align: center;
-  margin-left: 43px;
 }
 
-.adult::placeholder {
+.children::placeholder {
   font: inherit;
   color: inherit;
   opacity: 1;
@@ -1578,46 +1585,38 @@ html {
   right: 19px;
 }
 
-.minus-1 {
-  position: absolute;
+.minus {
+  z-index: 1;
+  background-color: transparent;
   padding: 0;
   border: 0;
-  width: 1px;
-  height: 13px;
-  top: 8px;
-  left: 170px;
-  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  margin-right: -25px;
+  margin-top: 10px;
 }
 
-.minus-2 {
-  position: absolute;
+
+.plus {
+  z-index: 1;
+  background-color: transparent;
   padding: 0;
   border: 0;
-  width: 1px;
-  height: 13px;
-  top: 8px;
-  right: 120px;
-  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
 }
 
-.plus-1 {
-  position: absolute;
+.modal-iformation {
   padding: 0;
-  border: 0;
-  width: 13px;
-  height: 13px;
-  left: 255px;
-  top: 13px;
-  opacity: 0.3;
+  width: 25px;
+  height: 25px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../images/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
-.plus-2 {
-  position: absolute;
-  padding: 0;
-  border: 0;
-  width: 13px;
-  height: 13px;
-  right: 70px;
-  top: 13px;
-  opacity: 0.3;
-}
