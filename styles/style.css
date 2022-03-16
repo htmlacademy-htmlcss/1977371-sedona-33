@@ -1479,13 +1479,12 @@ html {
 }
 
 .modal-stok-two {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 155px 51px 31px 51px 110px 43px 51px 31px 51px;
   margin-bottom: 40px;
 }
 
 .adult-arrival {
-  width: 155px;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -1495,7 +1494,7 @@ html {
 }
 
 .adult {
-  width: 133px;
+  grid-column: 2/5;
   background-color: #f2f2f2;
   border: 0;
   padding: 0;
@@ -1504,7 +1503,6 @@ html {
   font-size: 18px;
   line-height: 40px;
   text-align: center;
-  margin-right: 56px;
 }
 
 .adult::placeholder {
@@ -1514,7 +1512,7 @@ html {
 }
 
 .children {
-  width: 133px;
+  grid-column: 7/10;
   background-color: #f2f2f2;
   border: 0;
   padding: 0;
@@ -1533,7 +1531,8 @@ html {
 }
 
 .children-arrival {
-  width: 54px;
+  grid-column: 5/6;
+  text-align: right;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -1585,26 +1584,38 @@ html {
   right: 19px;
 }
 
-.minus {
-  z-index: 1;
+.minus-adult {
+  position: absolute;
   background-color: transparent;
   padding: 0;
   border: 0;
   width: 20px;
   height: 20px;
-  margin-right: -25px;
-  margin-top: 10px;
 }
 
-
-.plus {
-  z-index: 1;
+.minus-children {
+  position: absolute;
   background-color: transparent;
   padding: 0;
   border: 0;
   width: 20px;
   height: 20px;
-  margin-left: -10px;
+}
+
+.plus-adult {
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  width: 20px;
+}
+
+.plus-children {
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  width: 20px;
 }
 
 .modal-iformation {
