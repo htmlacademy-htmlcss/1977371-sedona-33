@@ -1494,7 +1494,7 @@ html {
 }
 
 .adult {
-  grid-column: 3/4;
+  grid-area: 2/5;
   background-color: #f2f2f2;
   border: 0;
   padding: 0;
@@ -1512,7 +1512,7 @@ html {
 }
 
 .children {
-  grid-column: 8/9;
+  grid-area: 8/9;
   background-color: #f2f2f2;
   border: 0;
   padding: 0;
@@ -1531,7 +1531,7 @@ html {
 }
 
 .children-arrival {
-  grid-column: 5/6;
+  grid-area: 5/6;
   text-align: right;
   font-size: 18px;
   line-height: 40px;
@@ -1585,7 +1585,7 @@ html {
 }
 
 .minus-adult {
-  grid-column: 2/3;
+  grid-area: 2/3;
   align-self: center;
   background-color: transparent;
   padding: 0;
@@ -1598,7 +1598,7 @@ html {
 }
 
 .minus-children {
-  grid-column: 7/8;
+  grid-area: 7/8;
   padding-left: 15px;
   align-self: center;
   background-color: transparent;
@@ -1609,7 +1609,7 @@ html {
 }
 
 .plus-adult {
-  grid-column: 4/5;
+  grid-area: 4/5;
   padding-left: 15px;
   align-self: center;
   background-color: transparent;
@@ -1619,26 +1619,12 @@ html {
 }
 
 .plus-children {
-  grid-column: 9/10;
+  grid-area: 9/10;
   padding-left: 15px;
   align-self: center;
   background-color: transparent;
   padding: 0;
   border: 0;
   width: 20px;
-}
-
-.modal-iformation {
-  grid-column: 6/7;
-  padding: 0;
-  width: 25px;
-  height: 25px;
-  background-color: #83b3d3;
-  border-radius: 50%;
-  border: none;
-  background-image: url("../images/info.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
 }
 
