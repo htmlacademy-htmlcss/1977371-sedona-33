@@ -1320,14 +1320,18 @@ html {
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
+.control-input + .control-mark {
+  background-image: url(../images/control-checkbox.svg);
+}
+
+.control:hover + .control-mark {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
 .control-input:focus-visible + .control-mark {
   outline: 3px solid #83b3d3;
-  background: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
