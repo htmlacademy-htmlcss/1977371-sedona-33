@@ -71,6 +71,7 @@ body {
   position: absolute;
   bottom: 0;
   height: 2px;
+  top: 65px;
   left: 18px;
   right: 18px;
   background-color: #756257;
@@ -134,7 +135,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
-  padding: 19px 17px;
+  padding: 20px 17px 19px;
   position: relative;
 }
 
