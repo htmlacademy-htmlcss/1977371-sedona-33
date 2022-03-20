@@ -400,6 +400,10 @@ body {
   padding: 15px;
 }
 
+.footer-contact-phone:active {
+  opacity: 0.3;
+}
+
 /* Подронее */
 .product-card-button {
   font-size: 16px;
@@ -424,6 +428,10 @@ body {
 .product-card-button:focus {
   background-color: #615048;
   outline: 3px solid #83b3d3;
+}
+
+.product-card-button:active {
+  opacity: 0.3;
 }
 
 /* В избранное */
@@ -486,6 +494,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  padding: 20px 20px 0 20px;
 }
 
 /* гостиница */
@@ -840,6 +849,10 @@ html {
   border: 3px solid #ffffff;
 }
 
+.catalog-button:active {
+  opacity: 0.3;
+}
+
 .catalog-button-reset {
   width: 160px;
   color: #ffffff;
@@ -858,6 +871,17 @@ html {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.catalog-button-reset:focus-visible {
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.catalog-button-reset:active {
+  opacity: 0.3;
+  border-radius: 0;
 }
 
 /* Результат поиска (НАЙДЕНО 38 ГОСТИНИЦ) */
@@ -895,6 +919,11 @@ html {
 
 .card-grid-toggle:focus {
   border: 2px solid #83b3d3;
+}
+
+.card-grid-toggle:active {
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .card-grid-toggle[aria-current="true"] {
@@ -1028,7 +1057,6 @@ html {
 
 .product-card {
   width: 340px;
-  height: 438px;
   display: flex;
   flex-direction: column;
 }
@@ -1040,6 +1068,7 @@ html {
   text-decoration: none;
   list-style-type: none;
   margin: 0;
+  padding: 0;
   margin-top: 16px;
 }
 
@@ -1054,8 +1083,16 @@ html {
   margin-bottom: 34px;
 }
 
+.product-card-image {
+  display: block;
+}
+
 .product-card-image:hover {
   opacity: 0.6;
+}
+
+.product-card-image:active {
+  opacity: 0.3;
 }
 
 .product-card-image:focus {
@@ -1114,8 +1151,28 @@ html {
   grid-template-rows: 23px 37px 37px;
   margin: 0;
   margin-top: 16px;
-  padding: 0;
   row-gap: 16px;
+  padding: 0 20px 20px 20px;
+}
+
+.field {
+  width: 600px;
+  padding: 0;
+  padding-left: 22px;
+  border: 0;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 26px;
+  border-radius: 10px 0 0 10px;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
 }
 
 .field-email {
@@ -1240,6 +1297,9 @@ html {
   --icon: url("../images/icons/social-yt.svg");
 }
 
+.footer-social-yt:hover {
+  background: #68A2CA;
+}
 
 .footer-social-item {
   margin-right: 30px;
@@ -1263,7 +1323,7 @@ html {
   position: relative;
   height: 4px;
   margin-top: 32px;
-  background-color: #000000;
+  background-color: #7a7a7a;
 }
 
 .range-bar {
@@ -1286,10 +1346,14 @@ html {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:active,
 .range-toggle:focus {
   outline: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1320,10 +1384,26 @@ html {
   margin-right: -2px;
 }
 
-.catalog-filter-label:focus-visible {
+
+.range-input-left:focus-visible {
+  outline: 2px solid #ffffff;
   box-shadow: 0 0 0 3px #81b3d2;
+  border-radius: 4px 0 0 4px;
 }
 
+.range-input-right:focus-visible {
+  outline: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #81b3d2;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input-left:active {
+  background: #756257;
+}
+
+.range-input-right:active {
+  background: #756257;
+}
 
 .range-input {
   padding-top: 14px;
@@ -1336,6 +1416,7 @@ html {
   background-color: transparent;
   appearance: textfield;
 }
+
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1472,6 +1553,7 @@ html {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
+
 
 .modal-title {
   width: 499px;
