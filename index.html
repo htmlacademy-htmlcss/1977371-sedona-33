@@ -11,14 +11,13 @@
   <!-- шапка на страницы -->
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="images/sedona-slogan.svg" width="139" height="70"
-          alt="Логотип городка Седона">
+      <a class="navigation-logo" href="index.html" aria-current="page">
+        <img class="page-header-logo" src="images/sedona-slogan.svg" width="139" height="70" alt="Логотип городка Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -170,7 +169,7 @@
           честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email" class="visually-hidden">Электропочта</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button newsletter-button" type="submit">
             <span>Подписаться</span>
@@ -218,89 +217,58 @@
       <button class="modal-close-button" type="submit">
         <span class="visually-hidden">Закрыть</span>
       </button>
-      <section class="modal-content">
+      <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <div class="modal-stok">
-          <p class="arrival-data">Дата заезда:</p>
-          <input class="text-input" type="text" placeholder="27 апреля 2020">
-          <button class="arrival-data-button" type="button">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5z" fill="#000" />
-              <path
-                d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1zm0 12H1V7h13v7zM1 6V3h2v2h1V3h7v2h1V3h2v3H1z"
-                fill="#000" />
-              <path
-                d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5zM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5zM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5zM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"
-                fill="#000" />
-            </svg>
+          <label class="arrival-date" for="arrival">Дата заезда:</label>
+          <input class="text-input" id="arrival" type="text" placeholder="27 апреля 2020">
+          <button class="date-button" type="button">
+            <span class="visually-hidden">Календарь</span>
           </button>
-          <p class="data-text">Мы не можем отправить вас в прошлое.</p>
+          <p class="date-text">Мы не можем отправить вас в прошлое.</p>
         </div>
         <div class="modal-stok">
-          <p class="departure-data">Дата выезда:</p>
-          <input class="text-input" type="text" placeholder="1 сентября 2021">
-          <button class="departure-data-button" type="button">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5z" fill="#000" />
-              <path
-                d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1zm0 12H1V7h13v7zM1 6V3h2v2h1V3h7v2h1V3h2v3H1z"
-                fill="#000" />
-              <path
-                d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5zM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5zM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5zM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"
-                fill="#000" />
-            </svg>
+          <label class="departure-date" for="departure">Дата выезда:</label>
+          <input class="text-input" id="departure" type="text" placeholder="1 сентября 2021">
+          <button class="date-button" type="button">
+            <span class="visually-hidden">Календарь</span>
           </button>
-          <p class="data-text-two">На эти даты есть свободные номера. Пока есть.</p>
+          <p class="date-text-two">На эти даты есть свободные номера. Пока есть.</p>
         </div>
         <div class="modal-stok-two">
 
-          <p class="adult-arrival">Взрослые:</p>
-          <button class="minus-adult" type="button">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 9v2h14V9H3z" fill="#000" />
-            </svg>
-            <span class="visually-hidden">Минус</span>
-          </button>
-          <input class="adult" type="text" placeholder="2">
-          <button class="plus-adult" type="button">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9z" fill="#000" />
-            </svg>
-            <span class="visually-hidden">Плюс</span>
-          </button>
-
-          <p class="children-arrival">Дети:</p>
-
-          <span class="form-label">
-            <label class="form-label visually-hidden" for="appointment-date">Дата</label>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_18711_289)" fill="#fff"><path d="M0 9h1V3H0v6zM1 0H0v1h1V0z"/></g><defs><clipPath id="clip0_18711_289"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+          <div class="field">
+            <label class="field-label" for="adult">Взрослые:</label>
+            <span class="field-box">
+              <button class="field-button minus" type="button">
+                <span class="visually-hidden">Минус</span>
               </button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label" >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-          </span>
+              <input class="field-number" id="adult" name="adult" type="number" value="2">
+              <button class="field-button plus" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </span>
+          </div>
 
-
-
-          <button class="minus-children" type="button">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 9v2h14V9H3z" fill="#000" />
-            </svg>
-            <span class="visually-hidden">Минус</span>
-          </button>
-          <input class="children" type="text" placeholder="1">
-          <button class="plus-children" type="button">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9z" fill="#000" />
-            </svg>
-            <span class="visually-hidden">Плюс</span>
-          </button>
+          <div class="field">
+            <label class="field-label" for="children">Дети:</label>
+            <span class="field-box">
+              <button class="field-button minus" type="button">
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="field-number" type="number" id="children" value="1" name="children" aria-describedby="tooltip-children">
+              <button class="field-button plus" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </span>
+            <span class="tooltip">
+              <span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </div>
 
         </div>
-        <div class="to-find">
-          <a class="find button" href="#">Найти</a>
-        </div>
-      </section>
+        <button class="find button" type="submit">Найти</button>
+      </form>
     </div>
   </div>
 
