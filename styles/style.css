@@ -1156,7 +1156,7 @@ html {
   padding: 0 20px 20px 20px;
 }
 
-.email-catalog {
+.email-input {
   width: 600px;
   padding: 0;
   padding-left: 22px;
@@ -1167,33 +1167,30 @@ html {
   border-radius: 10px 0 0 10px;
 }
 
-.email-catalog:hover {
+.email-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+@supports selector(:focus-visible) {
+  .email-input:focus {
+    background-color: #f2f2f2;
+    outline: none;
+  }
+}
+
+.email-input:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.email-input:hover {
   background-color: #e6e6e6;
 }
 
-.email-catalog:focus {
-  background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
-}
-
-.email-index {
-  width: 600px;
-  padding: 0;
-  padding-left: 22px;
-  border: 0;
-  background-color: #f2f2f2;
-  font-size: 18px;
-  line-height: 26px;
-  border-radius: 10px 0 0 10px;
-}
-
-.email-index:hover {
-  background-color: #e6e6e6;
-}
-
-.email-index:focus {
-  background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+.email-input:active {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
 .newsletter-form {
@@ -1201,13 +1198,6 @@ html {
   display: flex;
   box-sizing: border-box;
   margin: 0 auto;
-}
-
-.newsletter-email {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
 }
 
 .newsletter-button {
@@ -1221,6 +1211,7 @@ html {
   border-radius: 0 10px 10px 0;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: 700;
   line-height: 26px;
 }
 
