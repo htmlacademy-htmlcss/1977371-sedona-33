@@ -630,6 +630,7 @@ body {
   background-position: center;
 }
 
+
 .footer-html-link {
   background-image: url("../images/icons/brand-htmlacademy.svg");
 }
@@ -1155,7 +1156,7 @@ html {
   padding: 0 20px 20px 20px;
 }
 
-.field {
+.email-catalog {
   width: 600px;
   padding: 0;
   padding-left: 22px;
@@ -1166,16 +1167,16 @@ html {
   border-radius: 10px 0 0 10px;
 }
 
-.field:hover {
+.email-catalog:hover {
   background-color: #e6e6e6;
 }
 
-.field:focus {
+.email-catalog:focus {
   background-color: #e6e6e6;
   border: 3px solid #83b3d3;
 }
 
-.field-email {
+.email-index {
   width: 600px;
   padding: 0;
   padding-left: 22px;
@@ -1186,11 +1187,11 @@ html {
   border-radius: 10px 0 0 10px;
 }
 
-.field-email:hover {
+.email-index:hover {
   background-color: #e6e6e6;
 }
 
-.field-email:focus {
+.email-index:focus {
   background-color: #e6e6e6;
   border: 3px solid #83b3d3;
 }
@@ -1298,7 +1299,7 @@ html {
 }
 
 .footer-social-yt:hover {
-  background: #68A2CA;
+  background: #68a2ca;
 }
 
 .footer-social-item {
